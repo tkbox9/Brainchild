@@ -69,7 +69,7 @@ bot.dialog('PropertiesSearch',
         session.endDialog();
     }
 ).triggerAction({
-    matches: 'Greeting'
+    matches: 'PropertiesSearch'
 })
 
 bot.dialog('HelpDialog',
