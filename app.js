@@ -63,6 +63,15 @@ bot.dialog('GreetingDialog',
     matches: 'Greeting'
 })
 
+bot.dialog('PropertiesSearch',
+    (session) => {
+        session.send('PropertiesSearch...You reached the Greeting intent. You said \'%s\'.', session.message.text);
+        session.endDialog();
+    }
+).triggerAction({
+    matches: 'Greeting'
+})
+
 bot.dialog('HelpDialog',
     (session) => {
         session.send('You reached the Help intent. You said \'%s\'.', session.message.text);
